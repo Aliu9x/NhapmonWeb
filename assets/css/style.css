@@ -1,0 +1,631 @@
+
+.header-menu{
+    width: 100%;
+    padding-top:15px ;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 10;
+    z-index: 100;
+    transition: background-color 0.3s ease; /* Tạo hiệu ứng chuyển đổi mượt mà */
+
+}
+.header-menu.active{
+    background-color: #666;
+    padding-bottom: 15px;
+}
+#toggle{
+    right: 0;
+    font-size: 1.5rem;
+    display: none;
+    z-index: 100;
+    position: fixed;
+    cursor: pointer;
+}
+.header-menu-list{
+    display: flex;
+    list-style: none;
+    font-size: 1.6rem;
+    margin: 0;
+    font-weight: 600;
+    padding-left: 68px;
+    
+    
+}   
+.header-menu-shop{
+    padding: 0 20px ;
+    text-decoration: none;
+    border-radius: 3px ;
+    color: white;
+    margin: 0 1px;
+    font-size: 1.5rem;
+}
+.header-menu-shop:hover{
+   color:#8c8576;
+    
+}
+.header_navbar-search{
+    display: flex;
+    align-items: center;
+}
+.header_navbar-input{
+    display: flex;
+    align-items: center;
+    border: 5px;
+    
+} 
+.header_navbar-input input{
+    font-size: 1rem;
+    border-radius: 5px;
+    width: 350px;
+    
+} 
+.header_navbar-icon-link-search{
+    position: relative;
+    color:black ;
+    left: -25px;
+}
+.header_navbar-icon-search{
+    font-size: 1.1rem;
+    margin-left: 1px;
+}
+.header_menu_account {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 100px;
+    
+    
+}
+.login-btn{
+    border-radius: 3px;
+}
+.header_account:hover{
+    color:#8c8576;
+}
+.header_account-Register{
+    margin: 0 1px;
+}
+.header_navbar-search-login{
+    display: flex;
+    justify-content: space-between;
+}
+.header_menu_cart{
+    margin-left: 20px;
+}
+
+.header_menu_cart--icon{
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+.header_menu_cart--icon:hover{
+    color:#8c8576;
+}
+/* title  */
+.product-name{
+    text-align: center;
+    padding-top:80px ;
+    
+}
+.product-name strong{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    position: relative ;
+    z-index:0 ;
+}   
+.product-name-elment::after{
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 8px;
+    background-color: #e1e1e1;
+    right: -7%;
+    top: 78%;
+    z-index: 1;
+}
+.product-fashionNews{
+    text-align: center;
+    padding-top: 80px;
+}
+.product-fashionNews strong{
+    font-size: 2.3rem;
+    text-transform: uppercase;
+    position: relative ;
+    z-index:0 ;
+    
+}   
+.product-fashionNews-elment::after{
+    content: "";
+    position: absolute;
+    width: 305px;
+    height: 8px;
+    background-color: #e1e1e1;
+    right: -7%;
+    top: 78%;
+    z-index: 1;
+}
+
+/* produtct */
+.home-product-item{
+    display: block;
+    text-decoration: none;
+    background-color: var(--white-color);
+    margin-top: 10px;
+    position: relative;
+    border-bottom-left-radius:2px ;
+    border-bottom-right-radius: 2px;
+    border: 2px solid #fcf8f8;
+    border-radius: 4px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.01);
+    transition: transform linear 0.1s ;
+    will-change: transform ;
+    cursor: pointer;
+
+}
+.home-product-item:hover{
+    transform:  translatey(-2px);
+    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, 0.05); 
+}
+.home-product-item-img{
+    
+    padding-top:100% ;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    background-color: #F6F6F3;
+}
+.home-product-item-name{
+    text-align: unset; 
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+    line-height: 1.8rem;
+    margin: 10px 10px 6px 10px;
+    height: 3.6rem;
+    overflow: hidden;
+    display: block;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+
+}
+.home-product-item-price{
+    display: flex;
+
+}
+.home-product-item-price--old{
+    font-size: 1.3rem;
+    color: #666;
+    margin-left: 10px;
+    font-weight: 600;
+}
+.home-product-item--action{
+    display: flex;
+    margin: 6px 10px 0 ;
+    justify-content: space-between;
+}
+.home-product-item-like-icon_fill{
+    color: var(--primaky-color);
+}
+.home-product-item-like-icon_empty{
+    color: black;
+}
+.home-product-item--rating{
+    font-size: 0.6rem;
+    margin: 0.5px 0 0 auto;
+    padding-top: 4px;
+}
+.home-product-item--icon-star{
+    color   : var(--star-gold-color);
+}
+.home-product-item-sold{
+    margin-left: 6px;
+    color: var(--text-color);
+}
+
+.home-product-item--time_location{
+    display: flex;
+    margin-left: 10px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    padding-bottom: 6px;
+
+}
+.home-product-item--time{
+    font-size: 0.9rem;
+    color: #26aa99;
+
+}
+.home-product-item--time img    {
+    max-width: 20px;
+    max-width: 20px;
+}
+.home-product-item--time_name{
+    padding-right: 5px;
+    border-right: 1px solid rgba(0, 0, 0, .09);
+   
+    
+}
+.home-product-item--location_icon{
+    color: var(--text-color);
+}
+.home-product-item--location_name{
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.home-product-item--location{
+    margin-left: 10px;
+    
+}
+.home-product-item-favourite{
+    position: absolute;
+    top: 10px;
+    left: -3px;
+    background-color:rgb(226, 193, 136);
+    color: var(--white-color);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    padding-right: 17px;
+    border-top-right-radius:3px ;
+    border-bottom-right-radius: 3px;
+    
+}
+.home-product-item-favourite::before{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0px;
+    border-top: 6px solid rgb(226, 193, 136);
+    border-left: 4px solid transparent;
+}
+/* fashionNews */
+.btn-puproduct button{
+    font-size: 1.3rem;
+    border: 1px solid var(--text-color);
+}
+.btn-puproduct{
+    text-align: center;
+    margin-top: -20px;
+    padding-bottom: 50px;
+}
+
+.fashionNews a img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.content-fashionNews {
+    text-align: unset; /* Reset text alignment *//* OR */
+    text-align: left; /* Align to the left */
+}
+.fashionNews-item-1{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    margin-top: 15px;
+    width: 170px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 1px;
+}  
+.fashionNews-item-2{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    border: 1px solid var(--text-color);
+    margin-top: 15px;
+    width: 100px;
+    text-align: center;
+    font-weight: 500;
+    border-radius: 1px;
+} 
+.fashionNews-item{
+    display: flex;
+}
+.fashionNews-title{
+    display: block;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-top: 13px;
+
+}
+.content-fashionNews span{
+    display: block;
+    margin: 5px 0;
+    color: #9d9d9d;
+}
+.content-fashionNews-detail{
+    display: block;
+    height: 3rem;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+.btn-fashionNews button{
+    font-size: 1.3rem;
+    border: 1px solid var(--text-color);
+}
+.btn-fashionNews{
+    text-align: center;
+    margin-top: 20px;
+}
+/* footer */
+.page-footer {
+    background-color: #f8f8f8;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000;
+    padding: 100px 100px;
+}
+.logo-name h1{
+    
+}
+.footer-information{
+    max-width: 320px;
+}
+.footer-information p {
+    font-size: 0.9rem;
+}
+.footer-information h3{
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 0 0 24px;
+}
+.footer-register{
+    padding-bottom: 8px;
+    border-bottom: 1px solid#9d9d9d;
+    max-width: 260px;
+    position: absolute;
+}
+.footer-register i{
+    position: relative;
+    bottom: 6px;
+}   
+.footer-register input{
+    border: 0   ;
+    background-color: #f8f8f8;
+}
+.footer-register button{
+    background-color: var(--text-color);
+    color: var(--white-color);
+    border-radius: 2px;
+}
+.footer-about-name h5{
+    font-size: 1.4rem;
+}
+.footer-about-item{
+    padding-left: 5px;
+}
+.footer-about-list li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    
+}
+.footer-about-list li{
+    list-style: none;
+    padding:2px 0 ;
+}
+.footer-about-list{
+    padding-left: 5px;
+}
+.footer-social h3{
+    font-size: 1rem;
+    font-weight: 700;
+}
+.social-link{
+    display: flex;
+    padding-top: 10px;  
+    padding-left: 0;
+}
+.social-link li{
+    list-style: none;
+    padding: 0 7px;
+    font-size: 1.5rem;
+}
+
+.footer-policy-name h5{
+    font-size: 1.4rem;
+}
+.footer-policy-item{
+    padding-left: 5px;
+}
+.footer-policy-list li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 0.9rem;
+    
+}
+.footer-policy-list li{
+    list-style: none;
+    padding:2px 0 ;
+}
+.footer-policy-list{
+    padding-left: 2px;
+}
+/* footer-store */
+.footer-store-name h5{
+    font-size: 1.4rem;
+}
+.store-name-locate{
+    display: flex;  
+}
+.store-name-locate i{
+    margin-right: 1px;
+    color: rgb(226, 193, 136);
+}
+.footer-store-list{
+    padding-left: 2px;
+}
+.footer-store-list li{
+    list-style: none;
+    padding: 1px 0 ;
+}
+.footer-store-list li p{
+    padding-left: 20px; 
+}
+.store-name{
+    font-size: 0.9rem;
+}
+.footer-icon i{
+    font-size: 0.7rem;
+    color:  rgb(226, 193, 136);
+}
+/* modal */
+.blur-bg-overlay{
+    position: fixed;
+    top: 0;     
+    left: 0;    
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(5px);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.1s ease;
+}
+.show-popup .blur-bg-overlay{
+    opacity: 1;
+    pointer-events: auto;
+}
+.login-form{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    max-width: 720px;;
+    width: 100%;
+    background:#fcf8f8 ;
+    border: 2px solid #fcf8f8;
+    transform: translate(-50% ,-50%);
+    opacity: 0;
+    pointer-events: none;
+
+}
+.show-popup .login-form{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translate(-50% ,-50%);
+    transition: transform 0.3s ease, opacity 0.1s;
+}
+.close-btn{
+    position: absolute;
+    right: 12px;
+    color: #666;
+    cursor: pointer;
+    font-size: 2rem;
+}
+.form-box{
+    display: flex;
+}
+.form-deitals{
+    max-width: 330px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.login .form-deitals{
+    background-image: url(/assets/Img/login.png);
+    background-size: cover;
+    background-position: center;
+}   
+.signup .form-deitals{
+    background-image: url(/assets/Img/create.png);
+    background-size: cover;
+    background-position: center;
+}
+.form-deitals h2{
+    color: #d5d5d5;
+}
+.form-content{
+    width: 100%;
+    padding: 35px;
+}
+form .input-field{
+    height: 50px;
+    width: 100%;
+    margin-top: 20px;
+    position: relative;
+}
+form .input-field input{
+    width: 100%;
+    height: 100%;
+    outline: none;
+    padding:0 15px ;
+    font-size: 1rem;
+    border-radius: 2px;
+    border: 1px solid #9d9d9d; 
+
+}
+.input-field input:focus{
+    border-color: #9d9d9d;
+}                                                                                                                                                                                                           
+.input-field input:is(:focus,:valid){
+    padding: 16px 15px 0;
+}   
+form .input-field label{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+    color: #9d9d9d;
+    pointer-events: none;
+    transition: 0.2s ease ;
+}
+form .input-field input:is(:focus,:valid)~label{
+    transform: translateY(-120%);
+    font-size: 0.7rem;
+    color: #26aa99;
+}
+.form-box a{
+    text-decoration: none;
+    color: #26aa99;
+}
+.form-box a:hover{
+    text-decoration: underline;
+}
+:where(.forgot-pass , .policy-text){
+    display: inline-flex;
+    margin-top: 14px;
+    font-size: 1rem;
+}
+form button{
+    width: 100%;
+    outline: none;
+    border: none;
+    font-style: 1rem;
+    font-weight: 500;
+    padding: 14px 0;
+    border-radius:3px ;
+    margin: 25px 0;
+    color: #F6F6F3;
+    background-color: #26aa99;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+.login-form .signup,
+.login-form.show-signup .login{
+    display: none;
+}
+.login-form.show-signup .signup{
+    display: flex;
+}
+.policy-text{
+    display: flex;
+    align-items: center;
+
+}
+.policy-text input{
+    width: 14px;
+    height: 14px;
+    margin-right: 7px;
+}

@@ -1,0 +1,163 @@
+.header{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    height: 80px;
+    display: grid;
+    
+}
+.layout-hearder{
+    
+    display: grid;
+    max-height: 480px;
+    max-width: 100%;
+    grid-template-columns: 10% 65% 15% 10%;
+}
+.header-icon{
+    margin-left: 20px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 25px;
+}
+.header-logo{
+    font-size: 40px;
+    font-weight: bold;
+    margin-left: 500px;
+}
+.header-search{
+    margin-top: 17px;
+    font-size: 15px
+}
+
+.search-header{
+    border: 0;
+}
+.header-icon2{
+    margin-top: 17px;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.container-note-top{
+    text-align: center;
+    color: #787878;
+}
+.container-note-top-xuhuong{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    
+}
+.container-note-top-khampha{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.container-note-top-sukien{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.container-note-top-khuyenmai{
+    color: black;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+    margin: 10px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.contrainer-note-mid-note{
+    font-weight: bold;
+    margin-top: 100px;
+    margin-left: -15px;
+    font-size: 24px;
+    color: black;
+
+}
+.contrainer-note-mid{
+    color: #787878;
+    margin-top: -5px;
+    margin-left: -15px;
+    margin-bottom: 10px;
+    display: block;
+}
+.contrainer-note-mid img{
+    width: 100%;
+    display: block;
+  
+}
+.contrainer-note-mid p{
+    color: black;
+}
+.contrainer-note-mid a{
+    color: black;
+    text-decoration: none;
+}
+.contrainer-note-mid-note-1{
+    font-size: 26px;
+    font-weight: bold;
+}
+.contrainer-note-mid-note-2{
+    font-size: 22px;
+    font-weight: 500;
+}
+.contrainer-note-mid li{
+    color: black;
+}
+.contrainer-note-mid-morelink{
+    border: 2px solid black;
+    border-radius: 4px;
+    height: 200px;
+}
+.layout-morelink{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    gap: 10px;
+}
+.img-morelink img{
+    width: 100%;
+    height: 197px;
+    padding: 0;
+    margin: 0;
+}
+.noteandlink-morelink{
+    width: 100%;
+    padding: 10px;
+}
+.noteandlink-morelink button{
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+}
+.noteandlink-morelink-link{
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.noteandlink-morelink-icon{
+    display: flex;
+    gap: 3px;
+    margin-left: 820px;
+}
